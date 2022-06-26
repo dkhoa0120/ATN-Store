@@ -1,0 +1,47 @@
+
+<!-- include header -->
+<%- include('include/_header') %>
+<!-- /include header -->
+
+<!-- main site-->
+<main id="site-main">
+    <div class="page-header text-center">
+        <br>
+        <h3>Update the product</h3>
+        <br>
+    </div>
+
+    <!-- form handling -->
+    <form method="POST" id="update_product">
+        <div class="container new_product">
+            <div class="form-group mb-3">
+                <label for="code" class="form-label">Code</label>
+                <input type="text" class="form-control" name="code" value="<%= product.origin %>" placeholder="Japan">
+            </div>
+            <div class="form-group mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="hidden" name="id" value="<%= product._id %>">
+                <input type="text" class="form-control" name="name" value="<%= product.name %>" placeholder="Rubber Ducky">
+            </div>
+            <div class="form-group mb-3">
+                <label for="price" class="form-label">Price</label>
+                <input type="number" class="form-control" name="price" min="0" value="<%= product.price %>" placeholder="50">
+            </div>
+            <div class="form-group mb-3">
+                <label for="qty" class="form-label">Qty</label>
+                <input type="number" class="form-control" name="qty" min="0" value="<%= product.stock %>" placeholder="1000">
+            </div>
+
+            <!-- submit button -->
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </form>
+    </div>
+</main>
+<!-- /main site-->
+
+<!-- footer header -->
+<%- include('include/_footer') %>
+<!-- /footer header -->

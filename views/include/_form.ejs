@@ -1,0 +1,27 @@
+<!-- form handling -->
+<form action="/api/products" method="POST" id="add_product">
+    <div class="container new_product">
+        <div class="form-group mb-3">
+            <label for="code" class="form-label">Code</label>
+            <input type="text mb-3" class="form-control" name="code" value="" placeholder="01">
+        </div>
+        <div class="form-group mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" class="form-control" name="name" value="" placeholder="Luffy">
+        </div>
+        <div class="form-group mb-3">
+            <label for="price" class="form-label">Price</label>
+            <input type="number" class="form-control" name="price" min="0" value="" placeholder="50">
+        </div>
+        <div class="form-group mb-3">
+            <label for="qty" class="form-label">Qty</label>
+            <input type="number" class="form-control" name="qty" min="0" value="" placeholder="1000">
+        </div>
+
+        <!-- submit button -->
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+    </div>
+</form>

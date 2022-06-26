@@ -1,0 +1,34 @@
+{
+  "name": "locr-atn",
+  "version": "1.0.0",
+  "description": "A Nodejs + Express + MongoDB application for manage (CRUD) products of an imaginary toy company called ATN.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huynhloc-1110/locr-atn.git"
+  },
+  "keywords": [
+    "crud",
+    "mongodb"
+  ],
+  "author": "Le Huynh Loc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huynhloc-1110/locr-atn/issues"
+  },
+  "homepage": "https://github.com/huynhloc-1110/locr-atn#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.8",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.16"
+  }
+}
